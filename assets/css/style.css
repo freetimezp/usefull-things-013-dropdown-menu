@@ -9,3 +9,85 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+ul {
+    background: #e3e3e3;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    color: #292929;
+    padding: 15px;
+    display: block;
+}
+
+ul li:hover {
+    background: lightgrey;
+}
+
+ul ul {
+    position: absolute;
+    min-width: 200px;
+    background: lightgrey;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background: #e3e3e3;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li i {
+    color: #292929;
+    float: right;
+    padding-left: 10px;
+}
+
+nav div {
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    font-size: 24px;
+    padding: 0.6em;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    nav div {
+        display: block;
+    }
+    ul {
+        display: none;
+        position: static;
+        background: #e3e3e3;
+    }
+    ul li {
+        display: block;
+    }
+    ul ul {
+        position: static;
+        background: #e3e3e3;
+    }
+}
+
+
+
+
+
+
